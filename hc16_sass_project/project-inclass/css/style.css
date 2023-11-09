@@ -19,9 +19,50 @@
   display: none;
 }
 .header__links {
+  list-style-type: none;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+.header__links--home, .header__links--disabled {
+  color: #202336;
+  border: none;
+  background-color: #ffffff;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 19px;
+}
+.header__links--disabled {
+  color: #b8becd;
+}
+.header__links--login {
+  font-weight: 700;
+  border: 1px solid #fb8f1d;
+  color: #fb8f1d;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding-inline: 1.6rem;
+  padding-block: 0.3rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: auto;
+}
+.header__links--register {
+  font-weight: 700;
+  border: 1px solid #fb8f1d;
+  color: #ffffff;
+  background-color: #fb8f1d;
+  border-radius: 8px;
+  padding-inline: 1.6rem;
+  padding-block: 0.3rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: auto;
 }
 
 body {

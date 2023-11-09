@@ -1,7 +1,34 @@
 // mixin
+@use "variables" as *;
 
 @mixin flex($jc, $ai: center){
     display: flex;
     justify-content:$jc;
     align-items:$ai;
+}
+
+
+// fontu ayarlayan bir mixin
+
+@mixin setFont($ff, $fw, $fs, $lh){
+    font-family: $ff;
+    font-weight: $fw;
+    font-size: $fs;
+    line-height: $lh;
+}
+
+
+// buton
+
+@mixin btn($pi, $pb, $color, $bg){
+    font-weight: 700;
+    border: 1px solid $btnBorderColor;
+    color: $color;
+    background-color: $bg;
+    border-radius: 8px;
+    // sağdan soldan ayırma
+    padding-inline: $pi; //? x ekseni
+    // yukarıdan aşağıdan ayırma
+    padding-block: $pb; //? y ekseni
+    @include setFont("Inter",500 ,1rem ,auto );
 }

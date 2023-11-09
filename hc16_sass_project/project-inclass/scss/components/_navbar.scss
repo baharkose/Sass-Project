@@ -1,6 +1,7 @@
 // navbar
 
 @use "../abstracts/mixin" as *;
+@use "../abstracts/variables" as *;
 
 
 .header{
@@ -16,6 +17,39 @@
     }
 
     &__links{
+        list-style-type:none;
         @include flex(space-between);  
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+
+        &--home{
+            color: $headerColor;
+            // import yapılması lazım.
+            border: none;
+            background-color: $mainColor;
+            // font-family: Inter;
+            // font-style: normal;
+            // font-weight: 500;
+            // font-size: 1rem;
+            // line-height: 19px;
+            @include setFont("Inter", 500, 1rem, 19px);
+            
+
+
+        }
+        &--disabled{
+            @extend .header__links--home;
+            color: #b8becd;
+            // font-weight: 700;
+        }
+
+        &--login{
+            @include btn(1.6rem, 0.3rem, $btnBorderColor, $mainColor);
+            
+        }
+
+        &--register{
+            @include btn(1.6rem, 0.3rem, $mainColor,$btnBorderColor);
+        }
     }
 }
