@@ -32,3 +32,21 @@
     padding-block: $pb; //? y ekseni
     @include setFont("Inter",500 ,1rem ,auto );
 }
+
+@mixin media-sm{
+    @media screen  and (max-width:550px){
+        @content;
+    }
+}
+@mixin media-md{
+    @media screen  and (max-width:800px){
+        @content;
+    }
+}
+
+@mixin media-lg{
+    @media screen  and (max-width:1100){
+        @content;
+    }
+}
+
