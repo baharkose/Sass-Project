@@ -1,1 +1,28 @@
 // main 
+@use "./abstracts/variables"  as v;
+@use "./base/reset"; // içinde değişken vs olmadığı içinas e ihtiyaç duyulmadı.
+
+// @use "./abstracts/color" as c  bu use e özel bişeydir.
+// hala göremedi neden? ya variables.$mainColor denilmeli ya da as kullanılmalı;
+// variables ve abstarckta da main colors var hangisi geçerli hengisini çağırırsam.
+// importta bir değişken yalnızca bir kez kullanılabilir. ancak as ya da . adres kullanılmalıdır. 
+
+// @use "./abstacts/variables" as * abstart içerisindeki her türlü variablesı kullan.
+
+
+body{
+    background-color: v.$mainColor;
+    // background-color: $mainColor;
+}
+
+.container{
+    max-width: v.$maxWidth;
+    // sayfa ortalandı
+    margin: auto;
+    padding: 1rem;
+}
+
+button,
+i{
+    cursor:pointer;
+}
