@@ -64,30 +64,52 @@
 
     }
 
-
-}
-
-
-
-.about{
-    @include flex(center);
-    flex-direction: column;
-    &__image{
-        width: 100% !important;
-    }
-    &__text{
-        text-align: center;
-        
-        &--header{
-            line-height: 3rem !important;
+    .about{
+        @include flex(center);
+        flex-direction: column;
+        &__image{
+            width: 100% !important;
+        }
+        &__text{
+            text-align: center;
             
-        }
-        &--paragraph{
-            line-height: 2rem !important;
-        }
-        &--button{
-            padding: 0.4rem 1.8rem !important;
-            font-weight: 300 !important;
+            &--header{
+                line-height: 3rem !important;
+                
+            }
+            &--paragraph{
+                line-height: 2rem !important;
+            }
+            &--button{
+                padding: 0.4rem 1.8rem !important;
+                font-weight: 300 !important;
+            }
         }
     }
+
+    .destination{
+        @include flex(center);
+        flex-direction: column;
+        &__header{
+            @extend .destination;  
+        }
+        &__group{
+        //    border: 2px solid red;
+           @extend .destination;
+
+           
+        }
+        
+        &__card{
+            width: 100% !important;
+            img{
+            width: 100% !important;
+           }
+        }
+    }
+
+
 }
+
+
+

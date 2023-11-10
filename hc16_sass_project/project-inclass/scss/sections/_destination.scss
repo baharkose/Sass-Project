@@ -1,1 +1,87 @@
 // destination
+
+@use "../abstracts/mixin" as *;
+@use "../abstracts/variables" as *;
+@use "../components/responsive";
+
+
+.destination {
+    &__header {
+        @include flex(space-between);
+
+        h3 {
+            @include setFont("Playfair Display", 700, 1.5rem, auto);
+
+        }
+
+        button {
+            color: $btnColor;
+            border: none;
+            background-color: white;
+            font-weight: 500;
+            font-size: 14px;
+        }
+    }
+
+    &__group {
+        display: flex;
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        // border: 1px solid blue;
+        // position: relative;
+    }
+
+    .destination__card {
+        flex: 1;
+        overflow: hidden;
+        position: relative;
+        width: 22%;
+        height: auto;
+        // border: 1px solid red !important;
+
+        img {
+            cursor: zoom-in;
+            transition: all 2s;
+            position: relative;
+            border-radius: 5px;
+        &:hover{
+            cursor: zoom-in;
+            transform: scale(1.1);
+
+        }
+        
+        }
+         
+
+        p {
+            display: block;
+            // border: 1px solid blue;
+            border-radius: 0 6px 0 0;
+            background-color: $mainColor;
+            position: absolute;
+            z-index: 5;
+            bottom: 0;
+            left: 5;
+            width: 50%;
+            
+
+            span:nth-child(1) {
+                color: #042521;
+                display: block;
+                
+            }
+
+            span:nth-child(2) {
+                color: #80918e;
+                display: block;            
+
+            }
+
+        }
+    }
+
+
+}

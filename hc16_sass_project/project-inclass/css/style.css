@@ -121,30 +121,41 @@
   .home img {
     width: 100%;
   }
+  .about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .about__image {
+    width: 100% !important;
+  }
+  .about__text {
+    text-align: center;
+  }
+  .about__text--header {
+    line-height: 3rem !important;
+  }
+  .about__text--paragraph {
+    line-height: 2rem !important;
+  }
+  .about__text--button {
+    padding: 0.4rem 1.8rem !important;
+    font-weight: 300 !important;
+  }
+  .destination, .destination__group, .destination__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .destination__card {
+    width: 100% !important;
+  }
+  .destination__card img {
+    width: 100% !important;
+  }
 }
-.about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.about__image {
-  width: 100% !important;
-}
-.about__text {
-  text-align: center;
-}
-.about__text--header {
-  line-height: 3rem !important;
-}
-.about__text--paragraph {
-  line-height: 2rem !important;
-}
-.about__text--button {
-  padding: 0.4rem 1.8rem !important;
-  font-weight: 300 !important;
-}
-
 .home {
   display: flex;
   justify-content: center;
@@ -250,6 +261,68 @@
   font-size: 1rem;
   line-height: auto;
   font-weight: bold;
+}
+
+.destination__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.destination__header h3 {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: auto;
+}
+.destination__header button {
+  color: #fb8f1d;
+  border: none;
+  background-color: white;
+  font-weight: 500;
+  font-size: 14px;
+}
+.destination__group {
+  display: flex;
+  width: 100%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.destination .destination__card {
+  flex: 1;
+  overflow: hidden;
+  position: relative;
+  width: 22%;
+  height: auto;
+}
+.destination .destination__card img {
+  cursor: zoom-in;
+  transition: all 2s;
+  position: relative;
+  border-radius: 5px;
+}
+.destination .destination__card img:hover {
+  cursor: zoom-in;
+  transform: scale(1.1);
+}
+.destination .destination__card p {
+  display: block;
+  border-radius: 0 6px 0 0;
+  background-color: #ffffff;
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  left: 5;
+  width: 50%;
+}
+.destination .destination__card p span:nth-child(1) {
+  color: #042521;
+  display: block;
+}
+.destination .destination__card p span:nth-child(2) {
+  color: #80918e;
+  display: block;
 }
 
 body {
