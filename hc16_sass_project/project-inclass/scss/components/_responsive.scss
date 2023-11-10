@@ -22,5 +22,72 @@
             flex-direction:column;
             gap: 1rem;
         }
+
+
+    }
+
+    .home{
+        @include flex(center);
+        flex-direction:column-reverse;
+        &__form{
+            h2{
+             font-size: 2.5rem !important;
+              
+            }
+            h3{
+                font-size: 1.5rem !important;
+                margin: auto  !important;
+            }
+            hr{
+                display: none;
+            }
+           
+            form{
+                width: 100%;
+                @include flex("center");
+                flex-direction:column;
+                select{
+                   width: 100% !important;
+                   height: 36px;
+                }
+            }
+
+            &--button{
+                margin: auto  !important;
+                padding:0.3rem 3.5rem !important;
+            }
+        }
+        img{
+            width: 100%;
+        }
+
+
+    }
+
+
+}
+
+
+
+.about{
+    @include flex(center);
+    flex-direction: column;
+    &__image{
+        width: 100% !important;
+    }
+    &__text{
+        text-align: center;
+        
+        &--header{
+            line-height: 3rem !important;
+            
+        }
+        &--paragraph{
+            line-height: 2rem !important;
+        }
+        &--button{
+            padding: 0.4rem 1.8rem !important;
+            font-weight: 300 !important;
+        }
     }
 }

@@ -29,7 +29,13 @@
                 gap: 0.4rem;
                 select{
                     width: 48%;
-                    @include setFont("Inter", 400, 1rem, auto)
+                    border: 0.8px solid #afb0b9;
+                    border-radius: 6px;
+                    padding: 0.5rem;
+                    @include setFont("Inter", 400, 1rem, auto);
+                    color: $fontColor;
+                    background-color: $mainColor;
+
                 }
             }
 

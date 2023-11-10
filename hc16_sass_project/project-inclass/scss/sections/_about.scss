@@ -1,2 +1,37 @@
+@use "../abstracts/mixin" as *;
+@use "../abstracts/variables" as *;
+@use "../components/responsive" as *;
+
+
 // about
+
+.about{
+    @include flex(center);
+    gap: 1.3rem;
+    &__image{
+        width:70%;
+        img{
+            width:90%;
+        }
+        
+    }
+    &__text{
+       
+        &--header{
+            @include setFont("Playfair Display", 700, 2rem, 1.1); 
+        }
+        &--paragraph{
+            @include setFont("Mulish", 300, 1rem, 25px);
+            color: #7b7987;
+        }
+        &--button{
+            margin-top: 1rem;
+            @include btn(150px, 8px, #fff, $btnBorderColor);
+            font-weight: bold;
+          
+        }
+       
+    }
+    
+}
 
