@@ -155,6 +155,28 @@
   .destination__card img {
     width: 100% !important;
   }
+  .guide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .guide__text {
+    text-align: center !important;
+    width: 100% !important;
+  }
+  .guide__text--header {
+    width: 100%;
+  }
+  .guide__text--paragraph {
+    width: 100%;
+  }
+  .guide__image {
+    width: 100% !important;
+  }
+  .guide__image img {
+    width: 100%;
+  }
 }
 .home {
   display: flex;
@@ -323,6 +345,52 @@
 .destination .destination__card p span:nth-child(2) {
   color: #80918e;
   display: block;
+}
+
+.guide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+.guide__text {
+  width: 50%;
+}
+.guide__text--header {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 3.2rem;
+}
+.guide__text--paragraph {
+  font-family: "Mulish";
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  color: #7d7987;
+}
+.guide__text--button {
+  margin-top: 1rem;
+  font-weight: 700;
+  border: 1px solid #fb8f1d;
+  color: #ffffff;
+  background-color: #fb8f1d;
+  border-radius: 8px;
+  padding-inline: 0.5rem;
+  padding-block: 0.5rem;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: auto;
+  padding: 0.5rem 3rem;
+  font-weight: bold;
+}
+.guide__image {
+  width: 50%;
+}
+.guide__image img {
+  width: 100%;
 }
 
 body {

@@ -1,1 +1,44 @@
 // guide
+@use "../abstracts/variables"  as *;
+@use "../abstracts/mixin" as *;
+@use "../components/responsive";
+
+
+.guide{
+    @include flex(center);
+    justify-content: center;
+    align-items: center;
+
+    &__text{
+        width: 50%;
+        &--header{
+            @include setFont("Playfair Display", 700, 2rem, 3.2rem);
+        }
+        &--paragraph{
+            @include setFont("Mulish", 300, 1rem, 1.8rem);
+            color: #7d7987;
+        }
+        &--button{
+            margin-top: 1rem;
+            @include btn(0.5rem, 0.5rem, $mainColor, $btnColor);
+            padding: 0.5rem 3rem;
+            font-weight: bold;
+        }
+       
+     
+    }
+    &__image{
+        width:50%;
+        img{
+            width: 100%;
+        }
+    }
+}
+
+// .guide {
+//     &__text{
+//         &--header{
+//             @include getFont("Playfair Display", 700, 2rem, 3.2rem);
+//         }
+//     }
+// }
