@@ -178,6 +178,24 @@
     width: 100%;
   }
 }
+.footer {
+  background-color: #f9f9fb;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__icons i {
+  padding: 1rem 0.5rem;
+  font-size: 2rem;
+}
+.footer__icons i:hover {
+  color: #fb8f1d;
+  transition: 1s all ease-in-out;
+}
+
 .home {
   display: flex;
   justify-content: center;
